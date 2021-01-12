@@ -1,0 +1,59 @@
+﻿@page
+@model Examen_Chinzaruc_Alexandra_MK3.Pages.Exhibits.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Exhibit</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Exhibit.Exhibit_Name" class="control-label"></label>
+                <input asp-for="Exhibit.Exhibit_Name" class="form-control" />
+                <span asp-validation-for="Exhibit.Exhibit_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exhibit.Comic_Universe" class="control-label"></label>
+                <input asp-for="Exhibit.Comic_Universe" class="form-control" />
+                <span asp-validation-for="Exhibit.Comic_Universe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exhibit.Hero_Power" class="control-label"></label>
+                <input asp-for="Exhibit.Hero_Power" class="form-control" />
+                <span asp-validation-for="Exhibit.Hero_Power" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exhibit.Issue_of_Apparition" class="control-label"></label>
+                <input asp-for="Exhibit.Issue_of_Apparition" class="form-control" />
+                <span asp-validation-for="Exhibit.Issue_of_Apparition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exhibit.Issue_Name" class="control-label"></label>
+                <input asp-for="Exhibit.Issue_Name" class="form-control" />
+                <span asp-validation-for="Exhibit.Issue_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exhibit.FirstAppearanceDate" class="control-label"></label>
+                <input asp-for="Exhibit.FirstAppearanceDate" class="form-control" />
+                <span asp-validation-for="Exhibit.FirstAppearanceDate" class="textdanger"></span>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+             </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "Examen_Chinzaruc_Alexandra_MK3Context"
+    }
+  }
+}
